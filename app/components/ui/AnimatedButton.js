@@ -1,7 +1,6 @@
-import clsx from "clsx";
 import Link from "next/link";
 
-const AnimatedButton = ({ children, href = "#", variant = "primary" }) => {
+const AnimatedButton = ({ children, href = "#" }) => {
   return (
     <Link
       href={href}

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import NavItem from "./NavItem";
+import BadgeLink from "../ui/BadgeLink";
 
 const NAV_ITEMS = [
   {
@@ -56,7 +57,7 @@ const NAV_ITEMS = [
 
 const NavItems = () => {
   return (
-    <div className="hidden md:flex items-center gap-6 font-medium tracking-wide">
+    <div className="hidden xl:flex items-center gap-6 font-medium tracking-wide">
       {NAV_ITEMS.map((item) => (
         <NavItem
           key={item.title}
@@ -65,12 +66,10 @@ const NavItems = () => {
           subtitles={item.subtitles}
         />
       ))}
-      <Link href="/" className="flex items-center gap-2">
+
+      <BadgeLink badgeText="New" href="#">
         Order book
-        <span className="h-[24px] new-badge flex items-center justify-center text-white rounded px-2 text-sm">
-          <em>New</em>
-        </span>
-      </Link>
+      </BadgeLink>
     </div>
   );
 };

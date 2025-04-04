@@ -73,8 +73,7 @@ body {
 
 .new-badge {
   position: relative;
-  background: #374bff;
-  color: #fff;
+
   overflow: hidden;
 }
 
@@ -87,7 +86,7 @@ body {
   background: linear-gradient(
     104deg,
     rgba(55, 75, 255, 0) 20.65%,
-    #99a4ff 49.09%,
+    #c2c8ff 49.09%,
     rgba(55, 75, 255, 0) 83.15%
   );
   opacity: 1;

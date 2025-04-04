@@ -17,7 +17,7 @@ const NavItem = ({ title, href, subtitles }) => {
         <div className="absolute top-full pt-2 left-0 z-10 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all pointer-events-none group-hover:pointer-events-auto">
           <ul className=" rounded-lg p-4 bg-white  list-none w-[200px]  box-shadow-default border border-[#EDEDED] flex flex-col gap-4 z-10 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:-translate-y-1.5 transition-all pointer-events-none group-hover:pointer-events-auto">
             {subtitles.map((subtitle) => (
-              <li className="flex items-center gap-2">
+              <li key={subtitle.title} className="flex items-center gap-2">
                 <Link href={subtitle.href} className="flex items-center gap-2">
                   {subtitle.title}
                 </Link>

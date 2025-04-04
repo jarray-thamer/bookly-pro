@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const AnimatedButton = ({ children, href = "#" }) => {
+const AnimatedButtonLink = ({ children, href = "#" }) => {
   return (
     <Link
       href={href}
@@ -16,10 +16,10 @@ const AnimatedButton = ({ children, href = "#" }) => {
 
 const renderTextSpan = (children, className = "relative") => (
   <span
-    className={`${className} z-10 block [-webkit-transform:translateZ(0px)]`}
+    className={`${className} z-10 flex items-center [-webkit-transform:translateZ(0px)]`}
   >
     {children}
   </span>
 );
 
-export default AnimatedButton;
+export default AnimatedButtonLink;
